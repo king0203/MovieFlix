@@ -3,9 +3,8 @@ import styles from "@/app/styles/common.module.css"
 import MovieCard from "@/app/components/MovieCard";
 
 const Movie = async () => {
-    await new Promise(resolve => setTimeout(resolve, 2000));
 
-    const url = process.env.RAPID_KEY;
+    const url = process.env.RAPID_KEY
     const options = {
       method: 'GET',
       headers: {
